@@ -7,4 +7,4 @@ RUN apk update && apk upgrade && \
     apk add --no-cache git 
 RUN pip install -r /requirements.txt
 
-CMD ["python", "/create_db.py"]
+ENTRYPOINT ["python", "/create_db.py"]
